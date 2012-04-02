@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF1F8666-DA92-4052-ABA9-C6ADB629EA50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HCSAnalyzer</RootNamespace>
+    <AssemblyName>HCSAnalyzer</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>F:\NewWebSite\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://hcs-analyzer.ip-korea.org/</InstallUrl>
+    <SupportUrl>http://hcs-analyzer.ip-korea.org/</SupportUrl>
+    <ProductName>HCS Analyzer</ProductName>
+    <PublisherName>IPK</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.4.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\IMPlateAnalysis.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\IMPlateAnalysis.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Controls\LogoType1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7CC9311FD0F562EEF8A4B75805C1B853AA9027BB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>IMPlateAnalysis_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\IMPlateAnalysis.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\IMPlateAnalysis.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord">
+      <HintPath>.\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math">
+      <HintPath>.\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics">
+      <HintPath>.\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge">
+      <HintPath>.\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>.\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AlgLib">
+      <HintPath>.\AlgLib.dll</HintPath>
+    </Reference>
+    <Reference Include="HCSPlugin">
+      <HintPath>.\HCSPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>.\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.AWT.WinForms">
+      <HintPath>.\IKVM.AWT.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Beans">
+      <HintPath>.\IKVM.OpenJDK.Beans.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Charsets">
+      <HintPath>.\IKVM.OpenJDK.Charsets.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Corba">
+      <HintPath>.\IKVM.OpenJDK.Corba.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>.\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Jdbc">
+      <HintPath>.\IKVM.OpenJDK.Jdbc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Management">
+      <HintPath>.\IKVM.OpenJDK.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Media">
+      <HintPath>.\IKVM.OpenJDK.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Misc">
+      <HintPath>.\IKVM.OpenJDK.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Naming">
+      <HintPath>.\IKVM.OpenJDK.Naming.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Remoting">
+      <HintPath>.\IKVM.OpenJDK.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security">
+      <HintPath>.\IKVM.OpenJDK.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT">
+      <HintPath>.\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text">
+      <HintPath>.\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Tools">
+      <HintPath>.\IKVM.OpenJDK.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>.\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API">
+      <HintPath>.\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Bind">
+      <HintPath>.\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Crypto">
+      <HintPath>.\IKVM.OpenJDK.XML.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse">
+      <HintPath>.\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform">
+      <HintPath>.\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.WebServices">
+      <HintPath>.\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath">
+      <HintPath>.\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Reflection">
+      <HintPath>.\IKVM.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime">
+      <HintPath>.\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime.JNI">
+      <HintPath>.\IKVM.Runtime.JNI.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitware.mummy.Runtime">
+      <HintPath>.\Kitware.mummy.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitware.VTK">
+      <HintPath>.\Kitware.VTK.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Msagl">
+      <HintPath>.\Microsoft.Msagl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Msagl.Drawing">
+      <HintPath>.\Microsoft.Msagl.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Msagl.GraphViewerGDI">
+      <HintPath>.\Microsoft.Msagl.GraphViewerGDI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>.\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>.\office.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.XML" />
+    <Reference Include="weka">
+      <HintPath>.\weka.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class2.cs" />
+    <Compile Include="Classes\3D\c3DWorld.cs" />
+    <Compile Include="Classes\3D\cInteractiveObjects.cs" />
+    <Compile Include="Classes\3D\cGeometricalObjects.cs" />
+    <Compile Include="Classes\3D\cMatrix.cs" />
+    <Compile Include="Classes\3D\cMetaBiologicalObject.cs" />
+    <Compile Include="Classes\3D\cObject3D.cs" />
+    <Compile Include="Classes\cB-Score.cs" />
+    <Compile Include="Classes\cDendoGram.cs" />
+    <Compile Include="Classes\cDescriptor.cs" />
+    <Compile Include="Classes\CDisplayGraph.cs" />
+    <Compile Include="Classes\cDRCanalysis.cs" />
+    <Compile Include="Classes\cEdgeEffect.cs" />
+    <Compile Include="Classes\cExportDatabase.cs" />
+    <Compile Include="Classes\cGlobalInfo.cs" />
+    <Compile Include="Classes\cReference.cs" />
+    <Compile Include="Classes\MiscClasses.cs" />
+    <Compile Include="Classif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clustering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\cPlate.cs" />
+    <Compile Include="Classes\cScreening.cs" />
+    <Compile Include="Classes\cWell.cs" />
+    <Compile Include="Forms\FormForDescriptorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForDescriptorInfo.Designer.cs">
+      <DependentUpon>FormForDescriptorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsForDRCAnalysis\FormForDRCSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsForDRCAnalysis\FormForDRCSelection.Designer.cs">
+      <DependentUpon>FormForDRCSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsForGraphsDisplay\FormForMaxMinRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsForGraphsDisplay\FormForMaxMinRequest.Designer.cs">
+      <DependentUpon>FormForMaxMinRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsForDRCAnalysis\FormForDRCDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsForDRCAnalysis\FormForDRCDesign.Designer.cs">
+      <DependentUpon>FormForDRCDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormForMultivariateScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForMultivariateScreen.Designer.cs">
+      <DependentUpon>FormForMultivariateScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsForDRCAnalysis\FormToDisplayDRC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsForDRCAnalysis\FormToDisplayDRC.Designer.cs">
+      <DependentUpon>FormToDisplayDRC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsForGraphsDisplay\SimpleFormForXY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsForGraphsDisplay\SimpleFormForXY.Designer.cs">
+      <DependentUpon>SimpleFormForXY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormForClassificationTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForClassificationTree.Designer.cs">
+      <DependentUpon>FormForClassificationTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\FormForGenerateScreening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\FormForGenerateScreening.Designer.cs">
+      <DependentUpon>FormForGenerateScreening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormForKeggGene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForKeggGene.Designer.cs">
+      <DependentUpon>FormForKeggGene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormForPlateDimensions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForPlateDimensions.Designer.cs">
+      <DependentUpon>FormForPlateDimensions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormForSwapClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForSwapClasses.Designer.cs">
+      <DependentUpon>FormForSwapClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormForWellInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForWellInformation.Designer.cs">
+      <DependentUpon>FormForWellInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\FormSaveScreening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\FormSaveScreening.Designer.cs">
+      <DependentUpon>FormSaveScreening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsForGraphsDisplay\FormToDisplayArray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsForGraphsDisplay\FormToDisplayArray.Designer.cs">
+      <DependentUpon>FormToDisplayArray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PlateChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PlateTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Import_Export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForNameRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForNameRequest.Designer.cs">
+      <DependentUpon>FormForNameRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormForPathway.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForPathway.Designer.cs">
+      <DependentUpon>FormForPathway.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsForGraphsDisplay\FormForPie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsForGraphsDisplay\FormForPie.Designer.cs">
+      <DependentUpon>FormForPie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\FormForImportExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\FormForImportExcel.Designer.cs">
+      <DependentUpon>FormForImportExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormForKegg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForKegg.Designer.cs">
+      <DependentUpon>FormForKegg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormClassification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormClassification.Designer.cs">
+      <DependentUpon>FormClassification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormForNormalization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormForNormalization.Designer.cs">
+      <DependentUpon>FormForNormalization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormConsole.Designer.cs">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsForOptions\FormForOptionsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsForOptions\FormForOptionsWindow.Designer.cs">
+      <DependentUpon>FormForOptionsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsForGraphsDisplay\SimpleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsForGraphsDisplay\SimpleForm.Designer.cs">
+      <DependentUpon>SimpleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPlatesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPlatesList.Designer.cs">
+      <DependentUpon>FormPlatesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DimensionalityReduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Normalization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDendogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDendogram.Designer.cs">
+      <DependentUpon>FormDendogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystematicErrorCorrection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web References\jp.genome.soap\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHCSAnalyzer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowHCSAnalyzer.Designer.cs">
+      <DependentUpon>WindowHCSAnalyzer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormForDescriptorInfo.resx">
+      <DependentUpon>FormForDescriptorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormForMultivariateScreen.resx">
+      <DependentUpon>FormForMultivariateScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsForDRCAnalysis\FormForDRCSelection.resx">
+      <DependentUpon>FormForDRCSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsForGraphsDisplay\FormForMaxMinRequest.resx">
+      <DependentUpon>FormForMaxMinRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsForDRCAnalysis\FormForDRCDesign.resx">
+      <DependentUpon>FormForDRCDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsForDRCAnalysis\FormToDisplayDRC.resx">
+      <DependentUpon>FormToDisplayDRC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsForGraphsDisplay\SimpleFormForXY.resx">
+      <DependentUpon>SimpleFormForXY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormForClassificationTree.resx">
+      <DependentUpon>FormForClassificationTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\FormForGenerateScreening.resx">
+      <DependentUpon>FormForGenerateScreening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormForKeggGene.resx">
+      <DependentUpon>FormForKeggGene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormForPlateDimensions.resx">
+      <DependentUpon>FormForPlateDimensions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormForSwapClasses.resx">
+      <DependentUpon>FormForSwapClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormForWellInformation.resx">
+      <DependentUpon>FormForWellInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\FormSaveScreening.resx">
+      <DependentUpon>FormSaveScreening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsForGraphsDisplay\FormToDisplayArray.resx">
+      <DependentUpon>FormToDisplayArray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormForNameRequest.resx">
+      <DependentUpon>FormForNameRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormForPathway.resx">
+      <DependentUpon>FormForPathway.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsForGraphsDisplay\FormForPie.resx">
+      <DependentUpon>FormForPie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\FormForImportExcel.resx">
+      <DependentUpon>FormForImportExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormForKegg.resx">
+      <DependentUpon>FormForKegg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormClassification.resx">
+      <DependentUpon>FormClassification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormForNormalization.resx">
+      <DependentUpon>FormForNormalization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormConsole.resx">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsForOptions\FormForOptionsWindow.resx">
+      <DependentUpon>FormForOptionsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsForGraphsDisplay\SimpleForm.resx">
+      <DependentUpon>SimpleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPlatesList.resx">
+      <DependentUpon>FormPlatesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDendogram.resx">
+      <DependentUpon>FormDendogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowHCSAnalyzer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WindowHCSAnalyzer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Controls\ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\jp.genome.soap\Definition1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\jp.genome.soap\KEGG_v6.wsdl" />
+    <None Include="Web References\jp.genome.soap\LinkDBRelation1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\jp.genome.soap\MotifResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\jp.genome.soap\PathwayElement1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\jp.genome.soap\PathwayElementRelation1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\jp.genome.soap\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\jp.genome.soap\SSDBRelation1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\jp.genome.soap\StructureAlignment1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://soap.genome.jp/KEGG.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\jp.genome.soap\</RelPath>
+      <UpdateFromURL>http://soap.genome.jp/KEGG.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>IMPlateAnalysis_jp_genome_soap_KEGG</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Capture.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Capture1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Logo.PNG" />
+    <None Include="bin\DarkLogo.png" />
+    <None Include="bin\WhitePicture.png" />
+    <None Include="bin\LUT.PNG" />
+    <None Include="bin\ColumnEffect.png" />
+    <None Include="bin\RowEffect.png" />
+    <None Include="bin\BowlEffect.png" />
+    <None Include="bin\EdgeEffect.png" />
+    <Content Include="Controls\LogoType1.ico" />
+    <None Include="Resources\office-chart-scatter.ico" />
+    <None Include="Resources\zoom-out-41.ico" />
+    <None Include="Resources\zoom-in-41.ico" />
+    <None Include="Resources\zoom-out-4.ico" />
+    <None Include="Resources\zoom-in-4.ico" />
+    <None Include="Resources\db_update.ico" />
+    <None Include="Resources\insert-link.ico" />
+    <None Include="Resources\db_comit.ico" />
+    <None Include="Resources\format-justify-fill.ico" />
+    <None Include="Resources\help-about.ico" />
+    <None Include="Resources\configure-4.ico" />
+    <None Include="Resources\db_add.ico" />
+    <None Include="Resources\application-exit.ico" />
+    <None Include="Resources\document-open-5.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

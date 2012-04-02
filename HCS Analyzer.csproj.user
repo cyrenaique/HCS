@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>F:\NewWebSite\|G:\Publish\|F:\Publish\|publish\</PublishUrlHistory>
+    <InstallUrlHistory>http://hcs-analyzer.ip-korea.org/</InstallUrlHistory>
+    <SupportUrlHistory>http://hcs-analyzer.ip-korea.org/</SupportUrlHistory>
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartAction>Project</StartAction>
+    <StartProgram>C:\Workspace\Thierry\Plugins\HCS_Analysis\IMPlateAnalysis\bin\Debug\IMPlateAnalysis.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartProgram>C:\HCS_Analysis\IMPlateAnalysis.exe</StartProgram>
+    <StartAction>Project</StartAction>
+    <StartWorkingDirectory>
+    </StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <StartProgram>C:\Workspace\Thierry\Plugins\HCS_Analysis\IMPlateAnalysis\bin\Debug\IMPlateAnalysis.exe</StartProgram>
+  </PropertyGroup>
+</Project>
