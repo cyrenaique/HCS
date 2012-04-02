@@ -1,0 +1,9 @@
+E:\Study\HCS\HCSPlugin\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Study\HCS\HCSPlugin\obj\x86\Debug\HCSPlugin.Properties.Resources.resources
+E:\Study\HCS\HCSPlugin\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Study\HCS\HCSPlugin\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Study\HCS\HCSPlugin\bin\Debug\HCSPlugin.pdb
+E:\Study\HCS\HCSPlugin\bin\Debug\IMPlateAnalysis.exe
+E:\Study\HCS\HCSPlugin\obj\x86\Debug\HCSPlugin.pdb
+E:\Study\HCS\HCSPlugin\bin\Debug\HCSPlugin.dll
+E:\Study\HCS\HCSPlugin\obj\x86\Debug\HCSPlugin.dll
