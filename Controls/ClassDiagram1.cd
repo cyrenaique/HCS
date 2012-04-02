@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LibPlateAnalysis.cDescriptor">
+    <Position X="9.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAABAAAAAAIIAEAQAAAAIAIAAAAEAAAAABAA=</HashCode>
+      <FileName>Classes\cDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibPlateAnalysis.cExportDatabase">
+    <Position X="12.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAIAAAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Classes\cExportDatabase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibPlateAnalysis.cPlate">
+    <Position X="3.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAMAAACgAAAAMAAAEAQAVACUAUAAgAhAAACAAAk=</HashCode>
+      <FileName>Classes\cPlate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibPlateAnalysis.cScreening">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="LibPlateAnalysis.cScreening.CsvRow" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\cScreen.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="LibPlateAnalysis.cScreening.CsvFileReader" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\cScreen.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEQIQkUBCEQSFBAKCQBSBQIAQIQkYqIAEATTQiIAVE=</HashCode>
+      <FileName>Classes\cScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibPlateAnalysis.cWell">
+    <Position X="6.25" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>qACAAAAAAAQAcQAAAAAgwQQCCIAABKCAAwQAACAAYAA=</HashCode>
+      <FileName>Classes\cWell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
